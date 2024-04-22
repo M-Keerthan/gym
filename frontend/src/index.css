@@ -1,0 +1,109 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* Layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins", sans-serif; /* Specify fallback font family */
+}
+
+/* Header */
+header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 20px; /* Increase padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600; /* Add a bit of boldness */
+}
+
+/* Pages Container */
+.pages {
+  max-width: 1400px;
+  padding: 40px; /* Increase padding for better spacing */
+  margin: 0 auto;
+}
+
+/* Homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px; /* Reduce the gap for a more compact layout */
+}
+.workout-details {
+  background: #fff;
+  border-radius: 8px; /* Increase border-radius for a softer look */
+  margin: 20px auto;
+  padding: 30px; /* Increase padding for better spacing */
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slightly larger box shadow */
+}
+.workout-details h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.4em; /* Increase font size for better emphasis */
+  color: var(--primary);
+  font-weight: 600; /* Add a bit of boldness */
+}
+.workout-details p {
+  margin: 0;
+  font-size: 1em; /* Adjust font size for better readability */
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 50%;
+  color: #333;
+  font-size: 1.2em; /* Increase font size for better visibility */
+}
+
+/* New Workout Form */
+label, input {
+  display: block;
+  margin-bottom: 15px; /* Add some space between label and input */
+}
+input {
+  padding: 12px; /* Slightly increase padding for better input styling */
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Slightly increase border-radius */
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 12px; /* Slightly increase padding for better button styling */
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600; /* Add a bit of boldness */
+}
+div.error {
+  padding: 15px; /* Adjust padding for better spacing */
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 6px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
